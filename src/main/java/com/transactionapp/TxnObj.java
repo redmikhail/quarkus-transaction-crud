@@ -3,6 +3,7 @@ package com.transactionapp;
 import javax.persistence.Entity;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
+import javax.persistence.Column;
 
 @Entity
 public class TxnObj extends PanacheEntity {
