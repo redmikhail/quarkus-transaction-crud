@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Maker Checker</title>
+  <title>Tech World</title>
 
   <!-- PatternFly Styles -->
   <link rel="stylesheet" href="css/patternfly.min.css">
@@ -26,7 +26,7 @@ app.controller('FormController1', function($scope,$http) {
   var baseURL = window.location.protocol + '//' + window.location.host;
 
 $scope.buy = function(transactionId, transactionAmount) {
-  alert(transactionId+transactionAmount);
+
 $http({
         url: baseURL+'/transaction',
         method: "POST",
@@ -55,7 +55,7 @@ $http({
       <span class="icon-bar"></span>
     </button>
     <a class="navbar-brand" href="/">
-      <h2>e Tech World</h2>
+      <h2>Tech World</h2>
       <h3>Deals for the day</h3>
     </a>
   </div>
@@ -141,11 +141,25 @@ $http({
 
       </tr>
       </thead>
-      <tr  ng-model>
+      <tr>
         <td>432</td>
         <td>Beats Solo Earphones</td>
         <td>$195</td>
         <td ><button id="loadSvg"  type="button" class="btn btn-primary" ng-click="buy(432,195);">Buy</button></td>
+      </tr>
+
+      <tr>
+        <td>434</td>
+        <td>13 Inch Mac Book Pro</td>
+        <td>$1299</td>
+        <td ><button id="loadSvg"  type="button" class="btn btn-primary" ng-click="buy(434,1299);">Buy</button></td>
+      </tr>
+
+      <tr>
+        <td>435</td>
+        <td>Apple Air pods</td>
+        <td>$159</td>
+        <td ><button id="loadSvg"  type="button" class="btn btn-primary" ng-click="buy(435,159);">Buy</button></td>
       </tr>
     </table>
 
