@@ -8,7 +8,7 @@ import java.sql.Date;
 
 import javax.persistence.Column;
 
-@Entity
+@Entity(name="transaction")
 public class TxnObj extends PanacheEntity {
     @Column(name = "transaction_id")
     private String transactionNumber;
