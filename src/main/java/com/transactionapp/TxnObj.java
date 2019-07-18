@@ -3,6 +3,9 @@ package com.transactionapp;
 import javax.persistence.Entity;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
+
+import java.sql.Date;
+
 import javax.persistence.Column;
 
 @Entity
@@ -16,11 +19,11 @@ public class TxnObj extends PanacheEntity {
     @Column(name = "last_login")
     private Date login;
     
-    public String getUserId() {
+    public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(Integer userId) {
         this.userId = userId;
     }
     
@@ -28,7 +31,7 @@ public class TxnObj extends PanacheEntity {
         return login;
     }
 
-    public void setLogin(String userId) {
+    public void setLogin(Date login) {
         this.login = login;
     } 
     
