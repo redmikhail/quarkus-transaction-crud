@@ -25,6 +25,9 @@ public class TransactionResource {
     @POST
     @Transactional
     public Response create(@Valid TxnObj item) {
+        System.out.println(item.getTransactionNumber());
+        System.out.println(item.getTransactionAmount());
+        
         item.persist();
         return Response.status(Status.CREATED).entity(item).build();
         
