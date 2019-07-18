@@ -42,7 +42,7 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-jdbc-mariadb</artifactId>
-      <scope>provided</scope>
+     
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
