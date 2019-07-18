@@ -33,7 +33,7 @@ $http({
         data: "{\"transactionNumber\":"+transactionId+",\"transactionAmount\":"+transactionAmount+"}"
     })
     .then(function(response) {
-           $scope.responseMsg = response.data;
+           $scope.responseMsg = "Thanks for your purchase, your order will be shipped in 5 days!";
     });
     }
 });
